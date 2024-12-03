@@ -208,9 +208,14 @@ Flare's Data Connector protocol operates in **attestation rounds**, each consist
 
    - Signing: Attestation providers create a Merkle tree with the leaves containing hashed responses to all the requests marked valid in the consensus bit-vector. Each provider then signs their Merkle root with the ECDSA key corresponding to their address, and publishes it on-chain along with the consensus bit-vector.
     <details>
-      <summary>Merkle tree data structure</summary>
+      <summary>Merkle tree, Merkle root, and Merkle proof </summary>
 
-      TODO
+      **Merkle tree** data structure enables efficient and secure verification of the contents of a large data set. It is a binary tree, with each leaf the hash of a data entry, and each other node the hashed concatenation of its children. The root of the Merkle tree, called the **Merkle root**, is therefore a single hash whose value depends on all the entries in the data set.
+      
+      In order to verify an entry is part of the data set summarized with the Merkle root, one needs to know the siblings of all ancestor nodes of the leaf corresponding to the data entry. This is called the **Merkle proof**. If our data entry is valid, the Merkle root can be reconstructed from the Merkle proof with the following iterative process:
+        - Knowing the hash of the entry and its sibling leaf, the value of the parent node can be calculated.
+        - Knowing the values of the parent node and its sibling, the value of the "grandparent" node can be obtained.
+        - ...
     </details>
 
    - Finalization: The goal of finalization is to obtain a consensus response to the gathered requests. Attestation providers collect submitted signatures for matching Merkle roots, and can publish them (and the corresponding Merkle root) on-chain once the threshold weight of signatures is reached.
