@@ -1,0 +1,26 @@
+{
+    "status": "VALID",
+    "response": {
+        "attestationType": "0x5061796d656e7400000000000000000000000000000000000000000000000000",
+        "lowestUsedTimestamp": "1707293909",
+        "requestBody": {
+            "inUtxo": "8",
+            "transactionId": "0x01c17d143c03b459707f540fd5ee9f02a730c4cd114f310ef294b706ccf131d1",
+            "utxo": "4"
+        },
+        "responseBody": {
+            "blockNumber": "2577266",
+            "blockTimestamp": "1707293909",
+            "intendedReceivedAmount": "11091745",
+            "intendedReceivingAddressHash": "0xd4045c296d33c3a727a40d8284b9b3d8fb65c1d8acc21da68143d6d1e4c19b39",
+            "intendedSpentAmount": "25800382",
+            "oneToOne": false,
+            "receivedAmount": "11091745",
+            "receivingAddressHash": "0xd4045c296d33c3a727a40d8284b9b3d8fb65c1d8acc21da68143d6d1e4c19b39",
+            "sourceAddressHash": "0x477031ede55f3ca387013295a98360bafde1839c4a2f0726e6afdba725055aa7",
+            "spentAmount": "25800382",
+            "standardPaymentReference": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "status": "0"
+        }
+    }
+}

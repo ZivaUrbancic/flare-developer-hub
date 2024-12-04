@@ -1,0 +1,48 @@
+{
+    "status": "OK",
+    "data": {
+        "roundId": 791508,
+        "hash": "0x893262e158c834e45015f45478e9dccda44f70d73854129666a9fe23e41a4a6a",
+        "requestBytes": "0x5061796d656e7400000000000000000000000000000000000000000000000000746573744254430000000000000000000000000000000000000000000000000010594158b4a189785feda815241c4e6f299053a65b22c3d748e9f0a6c34372e501c17d143c03b459707f540fd5ee9f02a730c4cd114f310ef294b706ccf131d100000000000000000000000000000000000000000000000000000000000000080000000000000000000000000000000000000000000000000000000000000004",
+        "request": {
+            "attestationType": "0x5061796d656e7400000000000000000000000000000000000000000000000000",
+            "messageIntegrityCode": "0x10594158b4a189785feda815241c4e6f299053a65b22c3d748e9f0a6c34372e5",
+            "requestBody": {
+                "inUtxo": "8",
+                "transactionId": "0x01c17d143c03b459707f540fd5ee9f02a730c4cd114f310ef294b706ccf131d1",
+                "utxo": "4"
+            },
+            "sourceId": "0x7465737442544300000000000000000000000000000000000000000000000000"
+        },
+        "response": {
+            "attestationType": "0x5061796d656e7400000000000000000000000000000000000000000000000000",
+            "lowestUsedTimestamp": "1707293909",
+            "requestBody": {
+                "inUtxo": "8",
+                "transactionId": "0x01c17d143c03b459707f540fd5ee9f02a730c4cd114f310ef294b706ccf131d1",
+                "utxo": "4"
+            },
+            "responseBody": {
+                "blockNumber": "2577266",
+                "blockTimestamp": "1707293909",
+                "intendedReceivedAmount": "11091745",
+                "intendedReceivingAddressHash": "0xd4045c296d33c3a727a40d8284b9b3d8fb65c1d8acc21da68143d6d1e4c19b39",
+                "intendedSpentAmount": "25800382",
+                "oneToOne": false,
+                "receivedAmount": "11091745",
+                "receivingAddressHash": "0xd4045c296d33c3a727a40d8284b9b3d8fb65c1d8acc21da68143d6d1e4c19b39",
+                "sourceAddressHash": "0x477031ede55f3ca387013295a98360bafde1839c4a2f0726e6afdba725055aa7",
+                "spentAmount": "25800382",
+                "standardPaymentReference": "0x0000000000000000000000000000000000000000000000000000000000000000",
+                "status": "0"
+            },
+            "sourceId": "0x7465737442544300000000000000000000000000000000000000000000000000",
+            "votingRound": "791508"
+        },
+        "merkleProof": [
+            "0x4773a018b7dfcf7390a882406c53fc73eb08f9ebadb637820284dc615b7906cb",
+            "0x8ab24c478f9074e6b8f68ad08c6290819ec0e676ec0b6c42a9a3f0e43f510902",
+            "0x9f2fac2dbb646f5c9758551744c876a20421340f34dfe09c05877cc4e5540b49"
+        ]
+    }
+}
